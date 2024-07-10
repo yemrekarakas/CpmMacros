@@ -1,0 +1,89 @@
+{
+    "name": "cpm-macros",
+    "displayName": "CPM Macros",
+    "description": "Macros and Scripts",
+    "version": "1.0.0",
+    "publisher": "Yunus Emre Karakas",
+    "author": {
+        "email": "yemrekrks@gmail.com",
+        "name": "Yunus Emre Karakas",
+        "url": "https://github.com/yemrekarakas"
+    },
+    "license": "MIT",
+    "icon": "yek.png",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yemrekarakas/CpmMacros"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onCommand:extension.getMacros",
+        "onCommand:extension.getAllMacros",
+        "onCommand:extension.getMacrosByAppName",
+        "onCommand:extension.getScript",
+        "onCommand:extension.getAllScript",
+        "onCommand:extension.getScriptByAppName",
+        "onCommand:extension.getLibrary",
+        "onCommand:extension.getSearchScript",
+        "onCommand:extension.evrakTip",
+        "onCommand:extension.companies",
+        "onDidSaveTextDocument"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.greet",
+                "title": "CPM: Selam"
+            },
+            {
+                "command": "extension.getMacros",
+                "title": "CPM: Get Macros"
+            },
+            {
+                "command": "extension.getAllMacros",
+                "title": "CPM: Get All Macros"
+            },
+            {
+                "command": "extension.getMacrosByAppName",
+                "title": "CPM: Get Macros By Appname"
+            },
+            {
+                "command": "extension.getScript",
+                "title": "CPM: Get Script"
+            },
+            {
+                "command": "extension.getAllScript",
+                "title": "CPM: Get All Script"
+            },
+            {
+                "command": "extension.getScriptByAppName",
+                "title": "CPM: Get Script By Appname"
+            },
+            {
+                "command": "extension.getLibrary",
+                "title": "CPM: Get Library"
+            },
+            {
+                "command": "extension.getSearchScript",
+                "title": "CPM: Get Search Script By TableName"
+            },
+            {
+                "command": "extension.evrakTip",
+                "title": "CPM: Evrak Tip"
+            },
+            {
+                "command": "extension.companies",
+                "title": "CPM: Companies"
+            }
+        ]
+    },
+    "dependencies": {
+        "mssql": "^6.2.3"
+    }
+}

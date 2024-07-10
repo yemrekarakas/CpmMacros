@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "server": {
+    "name": "localhost",
+    "user": "sa",
+    "pass": "1",
+    "options": {
+      "encrypt": false,
+      "trustServerCertificate": true
+    }
+  },
+  "sec": {
+    "database": "TESTSEC",
+    "cpmuser": "SYSTEM",
+    "companyno": "01",
+    "appnames": [
+      "AlimFatura"
+    ]
+  },
+  "app": {
+    "database": "TESTAPP",
+    "cpmuser": "SYSTEM",
+    "appnames": [
+      "",
+      "SatisFatura"
+    ]
+  },
+  "folders": {
+    "macros": "Macros",
+    "script": "Script",
+    "library": "Library",
+    "sqlObjects": "SqlObjects",
+    "output": "Output",
+    "searchScript": "SearchScript"
+  },
+  "eventsFile": "C:/events.json"
+}
